@@ -11,7 +11,7 @@ namespace A1CWebCS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            int a=100;
+            int a= 100;
         }
     }
 }
