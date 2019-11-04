@@ -20,7 +20,7 @@
 
     <div class="row">
 
-        <div class="col-sm-4">.col-sm-4>
+        <div class="col-sm-4">
             Blood Sugar Readings<br />
  
             <asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
@@ -39,7 +39,7 @@
   
         </div>
 
-        <div class="col-sm-8">.col-sm-8>
+        <div class="col-sm-8">
             .col-sm-8<br />
         </div>
 
