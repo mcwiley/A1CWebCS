@@ -4,7 +4,7 @@
 
     <asp:Panel ID="Panel1" runat="server">
         <br />
-        A1CDesk has been developed to assist individuals with diabetes to manage their blood sugar levels. 
+        A1CWeb has been developed to assist individuals with diabetes to manage their blood sugar levels. 
         It additionally calculates an ESTIMATED A1C Level for a 30 day, 60 day, 90 day, and Overall (all readings) 
         providing a means to show your progress over time.
     </asp:Panel>
