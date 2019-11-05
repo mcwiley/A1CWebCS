@@ -11,7 +11,11 @@ namespace A1CWebCS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            int a= 100;
+            lbl_30Day.Text = "6.1";
+            lbl_60Day.Text = "6.3";
+            lbl_90Day.Text = "6.9";
+            lbl_Overall.Text = "7.1";
+            int a = 100;
         }
     }
 }

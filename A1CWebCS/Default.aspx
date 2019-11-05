@@ -14,14 +14,13 @@
 
     </div>
 
-    <hr />
     <br />
 
 
     <div class="row">
 
         <div class="col-sm-4">
-            Blood Sugar Readings<br />
+            <asp:Label ID="Label6" runat="server" Text="Blood Sugar Readings" Font-Size="14pt"></asp:Label><br /><br />
  
             <asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
                 AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" Width="300px">
@@ -40,7 +39,44 @@
         </div>
 
         <div class="col-sm-8">
-            .col-sm-8<br />
+            <asp:Label ID="Label7" runat="server" Text="A1C Value Entry" Font-Size="14pt"></asp:Label><br /><br />
+
+            <asp:Table ID="Table1" runat="server">
+                <asp:TableRow>
+                    <asp:TableCell Width="120px">Estimated A1C:</asp:TableCell>
+                    <asp:TableCell Width="60px">30 Day:</asp:TableCell>
+                    <asp:TableCell Width="100px"> <asp:Label ID="lbl_30Day" runat="server" Text="6.2"></asp:Label></asp:TableCell>
+                    <asp:TableCell Width="60px">60 Day:</asp:TableCell>
+                    <asp:TableCell Width="100px"> <asp:Label ID="lbl_60Day" runat="server" Text="6.5"></asp:Label></asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell Width="120px"></asp:TableCell>
+                    <asp:TableCell Width="60px">90 Day:</asp:TableCell>
+                    <asp:TableCell Width="100px"> <asp:Label ID="lbl_90Day" runat="server" Text="6.2"></asp:Label></asp:TableCell>
+                    <asp:TableCell Width="60px">Overall::</asp:TableCell>
+                    <asp:TableCell Width="100px"> <asp:Label ID="lbl_Overall" runat="server" Text="6.5"></asp:Label></asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
+
+            <br /><br />
+
+            <asp:Table ID="Table2" runat="server">
+                <asp:TableRow>
+                    <asp:TableCell Width="120px">Entry Date:</asp:TableCell>
+                    <asp:TableCell Width="100px"><asp:Calendar ID="Calendar1" runat="server"></asp:Calendar></asp:Label></asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell Width="120px">Entry Value:</asp:TableCell>
+                    <asp:TableCell Width="100px"></asp:Label></asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
+
+
+
+
+
+
+
         </div>
 
     </div>
