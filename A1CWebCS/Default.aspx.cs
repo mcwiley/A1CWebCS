@@ -17,5 +17,35 @@ namespace A1CWebCS
             lbl_Overall.Text = "7.1";
             int a = 100;
         }
+
+        protected void btn_Add_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btn_Update_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btn_Delete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btn_Clear_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btn_Export_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Export.aspx");
+        }
+
+        protected void btn_About_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("About.aspx");
+        }
     }
 }

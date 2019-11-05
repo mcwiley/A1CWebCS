@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="A1CWebCS._Default" %>
 
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="row">
@@ -39,6 +40,7 @@
         </div>
 
         <div class="col-sm-8">
+
             <asp:Label ID="Label7" runat="server" Text="A1C Value Entry" Font-Size="14pt"></asp:Label><br /><br />
 
             <asp:Table ID="Table1" runat="server">
@@ -62,23 +64,35 @@
 
             <asp:Table ID="Table2" runat="server">
                 <asp:TableRow>
-                    <asp:TableCell Width="120px">Entry Date:</asp:TableCell>
-                    <asp:TableCell Width="100px"><asp:Calendar ID="Calendar1" runat="server"></asp:Calendar></asp:Label></asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell Width="120px">Entry Value:</asp:TableCell>
-                    <asp:TableCell Width="100px"></asp:Label></asp:TableCell>
+                    <asp:TableCell Width="120px" VerticalAlign="Top">
+                        Entry Date:<br />
+                        <asp:Calendar ID="Calendar1" runat="server" Width="120px"></asp:Calendar>
+                    </asp:TableCell>
+                    <asp:TableCell Width="10px">
+                    </asp:TableCell>
+                    <asp:TableCell Width="120px" VerticalAlign="Top">
+                        Entry Value:<br>
+                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    </asp:TableCell>
                 </asp:TableRow>
             </asp:Table>
 
-
-
-
-
-
-
         </div>
 
+    </div>
+
+    <br /><br />
+
+    <div class="row">
+        <div class="col-sm-2"><asp:Button ID="btn_Add" runat="server" Text="Add" class="btn btn-primary" Width="100%" OnClick="btn_Add_Click" /></div>
+        <div class="col-sm-2"><asp:Button ID="btn_Update" runat="server" Text="Update" class="btn btn-primary" Width="100%" OnClick="btn_Update_Click" /></div>
+        <div class="col-sm-2"><asp:Button ID="btn_Delete" runat="server" Text="Delete" class="btn btn-primary" Width="100%" OnClick="btn_Delete_Click" /></div>
+        <div class="col-sm-2"><asp:Button ID="btn_Clear" runat="server" Text="Clear" class="btn btn-primary" Width="100%" OnClick="btn_Clear_Click" /></div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-2"><asp:Button ID="btn_Export" runat="server" Text="Export" class="btn btn-primary" Width="100%" OnClick="btn_Export_Click" /></div>
+        <div class="col-sm-2"><asp:Button ID="btn_About" runat="server" Text="About" class="btn btn-primary" Width="100%" OnClick="btn_About_Click" /></div>
     </div>
 
 </asp:Content>
