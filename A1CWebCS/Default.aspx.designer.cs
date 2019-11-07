@@ -123,13 +123,13 @@ namespace A1CWebCS
         protected global::System.Web.UI.WebControls.Table Table2;
 
         /// <summary>
-        /// Calendar1 control.
+        /// DatePicker1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        protected global::EO.Web.DatePicker DatePicker1;
 
         /// <summary>
         /// TextBox1 control.

@@ -20,6 +20,8 @@ namespace A1CWebCS
             string connectionString = "Data Source=s13.winhost.com;Initial Catalog=DB_103045_a1cdb;Persist Security Info=True;User ID=DB_103045_a1cdb_user;Password=Patty02$";
             sqlcon.ConnectionString = connectionString;
 
+            //MaskedEdit1.Mask = "###";
+
             Calc_Avg_A1C();
 
         }
@@ -36,6 +38,8 @@ namespace A1CWebCS
 
         protected void btn_Add_Click(object sender, EventArgs e)
         {
+            DateTime ddd = DatePicker1.SelectedDate;
+
             SqlDataSource1.DataBind();
         }
 

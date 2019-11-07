@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="A1CWebCS._Default" %>
 
-<%@ Register Assembly="Syncfusion.EJ.Web, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
+<%@ Register Assembly="EO.Web" Namespace="EO.Web" TagPrefix="eo" %>
+
 
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
@@ -68,17 +69,16 @@
                 <asp:TableRow>
                     <asp:TableCell Width="120px" VerticalAlign="Top">
                         Entry Date:<br />
-                        <asp:Calendar ID="Calendar1" runat="server" Width="120px"  BackColor="#FFFFCC" BorderColor="#FFCC66"  
-                            BorderWidth="1px" Font-Size="9pt"  
-                            ForeColor="#663399" ShowGridLines="True"></asp:Calendar>
-                    
-                    
-                    
+
+                        <eo:DatePicker ID="DatePicker1" runat="server" Width="120" PickerFormat="yyyy/MM/dd"></eo:DatePicker>
+
                     </asp:TableCell>
+
                     <asp:TableCell Width="10px"></asp:TableCell>
                     <asp:TableCell Width="120px" VerticalAlign="Top">
                         Entry Value:<br>
                         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox><br />
+
                     </asp:TableCell>
                 </asp:TableRow>
             </asp:Table>
