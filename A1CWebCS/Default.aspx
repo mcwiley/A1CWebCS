@@ -2,8 +2,6 @@
 
 <%@ Register Assembly="EO.Web" Namespace="EO.Web" TagPrefix="eo" %>
 
-
-
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="row">
@@ -75,10 +73,11 @@
                     </asp:TableCell>
 
                     <asp:TableCell Width="10px"></asp:TableCell>
+
                     <asp:TableCell Width="120px" VerticalAlign="Top">
                         Entry Value:<br>
-                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox><br />
-
+                        <asp:TextBox ID="TextBox1" runat="server" Width="70"></asp:TextBox>
+                        <ajaxToolkit:MaskedEditExtender runat="server" InputDirection="RightToLeft" Mask="999" MaskType="Number" TargetControlID="TextBox1"></ajaxToolkit:MaskedEditExtender>
                     </asp:TableCell>
                 </asp:TableRow>
             </asp:Table>

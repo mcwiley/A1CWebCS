@@ -17,10 +17,18 @@ namespace A1CWebCS
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            EO.Web.Runtime.AddLicense(
+                 "diHkq+rtABm8W6i9s8uud4SOscufWbOz8hfrqO7CnrWfWZekzRrxndz22hnl" +
+                 "qJfo8h/kdpm1wtq2aKm0wuShWer58/D3qeD29h7ArbSmwtyucKa2wd2vW5f6" +
+                 "9h3youbyzs2wcpmkwOmMQ5ekscu7rODr/wzzrunpzwzXfavRwgzUgODY6hPy" +
+                 "ccD2/h3rfMjBzueurODr/wzzrunpz7iJdabw+g7kp+rpz7iJdePt9BDtrNzC" +
+                 "nrWfWZekzRfonNzyBBDInbW4wuG2cK60weC0cLOz/RTinuX39vTjd4SOscuf" +
+                 "WbPw+g7kp+rp9um7aOPt9BDtrNzpz7iJWZeksefgpePzCOmMQ5ekscufWZek" +
+                 "zQzjnZf4ChvkdpnJ4NnWntmmsQ==");
+
+
             string connectionString = "Data Source=s13.winhost.com;Initial Catalog=DB_103045_a1cdb;Persist Security Info=True;User ID=DB_103045_a1cdb_user;Password=Patty02$";
             sqlcon.ConnectionString = connectionString;
-
-            //MaskedEdit1.Mask = "###";
 
             Calc_Avg_A1C();
 
