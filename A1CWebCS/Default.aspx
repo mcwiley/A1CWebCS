@@ -24,12 +24,25 @@
         <div class="col-sm-4">
             <asp:Label ID="Label6" runat="server" Text="Blood Sugar Readings" Font-Size="14pt"></asp:Label><br /><br />
  
-            <asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
-                AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" Width="300px">
+            <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" Width="300px" >
             <Columns>
-                <asp:BoundField DataField="ID" HeaderText="ID" ReadOnly="True" SortExpression="ID"  HeaderStyle-HorizontalAlign="Center" HeaderStyle-VerticalAlign="Middle" ItemStyle-HorizontalAlign="Center" ItemStyle-VerticalAlign="Middle" />
-                <asp:BoundField DataField="Reading_Date" HeaderText="Date" SortExpression="Reading_Date"  ItemStyle-HorizontalAlign="Center" ItemStyle-VerticalAlign="Middle" HeaderStyle-HorizontalAlign="Center" HeaderStyle-VerticalAlign="Middle" />
-                <asp:BoundField DataField="Reading_Value" HeaderText="Value" SortExpression="Reading_Value"  ItemStyle-HorizontalAlign="Center" ItemStyle-VerticalAlign="Middle" HeaderStyle-HorizontalAlign="Center" HeaderStyle-VerticalAlign="Middle" />
+<%--                <asp:CommandField ShowSelectButton="True" />--%>
+
+                <asp:BoundField DataField="ID" HeaderText="ID" ReadOnly="True" SortExpression="ID"  HeaderStyle-HorizontalAlign="Center" HeaderStyle-VerticalAlign="Middle" ItemStyle-HorizontalAlign="Center" ItemStyle-VerticalAlign="Middle" >
+                    <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle"></HeaderStyle>
+                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle"></ItemStyle>
+                </asp:BoundField>
+                
+                <asp:BoundField DataField="Reading_Date" HeaderText="Date" SortExpression="Reading_Date"  ItemStyle-HorizontalAlign="Center" ItemStyle-VerticalAlign="Middle" HeaderStyle-HorizontalAlign="Center" HeaderStyle-VerticalAlign="Middle" >
+                    <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle"></HeaderStyle>
+                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle"></ItemStyle>
+                </asp:BoundField>
+
+                <asp:BoundField DataField="Reading_Value" HeaderText="Value" SortExpression="Reading_Value"  ItemStyle-HorizontalAlign="Center" ItemStyle-VerticalAlign="Middle" HeaderStyle-HorizontalAlign="Center" HeaderStyle-VerticalAlign="Middle" >
+                    <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle"></HeaderStyle>
+                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle"></ItemStyle>
+                </asp:BoundField>
+
             </Columns>
         </asp:GridView>
 
@@ -42,7 +55,7 @@
 
         <div class="col-sm-8">
 
-            <asp:Label ID="Label7" runat="server" Text="A1C Value Entry" Font-Size="14pt"></asp:Label><br /><br />
+            <asp:Label ID="Label7" runat="server" Text="Estimated A1C Values" Font-Size="14pt"></asp:Label><br /><br />
 
             <asp:Table ID="Table1" runat="server">
                 <asp:TableRow>
@@ -75,13 +88,12 @@
                     <asp:TableCell Width="10px"></asp:TableCell>
 
                     <asp:TableCell Width="120px" VerticalAlign="Top">
-                        Entry Value:<br>
-                        <asp:TextBox ID="TextBox1" runat="server" Width="70"></asp:TextBox>
+                        mg/dL Value:<br>
+                        <asp:TextBox ID="TextBox1" runat="server" Width="50"></asp:TextBox>
                         <ajaxToolkit:MaskedEditExtender runat="server" InputDirection="RightToLeft" Mask="999" MaskType="Number" TargetControlID="TextBox1"></ajaxToolkit:MaskedEditExtender>
                     </asp:TableCell>
                 </asp:TableRow>
             </asp:Table>
-
         </div>
 
     </div>

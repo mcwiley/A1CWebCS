@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
 using System.Collections;
+using System.Drawing;
 
 namespace A1CWebCS
 {
@@ -63,7 +64,8 @@ namespace A1CWebCS
 
         protected void btn_Clear_Click(object sender, EventArgs e)
         {
-
+            TextBox1.Text = "";
+            DatePicker1.SelectedDate = DateTime.Today;
         }
 
         protected void btn_Export_Click(object sender, EventArgs e)
